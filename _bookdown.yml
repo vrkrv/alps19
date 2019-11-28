@@ -2,5 +2,5 @@ book_filename: "bookdown-demo"
 language:
   ui:
     chapter_name: ""
-delete_merged_file: true
-
+delete_merged_file: true  
+output_dir: "docs"
