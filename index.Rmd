@@ -1,0 +1,29 @@
+--- 
+title: "Отчёт о горном походе 2 к.с.\ Пеннинские Альпы"
+author: "Коровин Владимир"
+email: "<dimcoker@yandex.ru>"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+link-citations: yes
+github-repo: vrkrv/alps19
+description: "Отчёт о горном походе"
+---
+
+# Справочные сведения
+
+- Вид туризма: Горный
+- Район: Западные Альпы / Пеннинские Альпы
+- Категория сложности: вторая
+- Количество участников: 13
+- Сроки проведения: 14.07.2019 - 26.07.2019
+- Продолжительность: 13 дней
+- Протяженность: 105 км / 126 км*
+- Набор высоты: 11 км
+- Нитка маршрута: ст. Yolki-Palki (Bognanco) -- пер. Passo di Campo (н/к, 2180) -- пер. Passo di Pontimia (1А, 2387) -- пер. Zwischenbergen (1Б, 3287) -- пос. Saas-Almagel -- пер. Windjoch (1Б, 3850, сн-ск) -- вер. Ulrichshorn (1Б, 3925) -- хиж. Bordierhutte -- пер. Mittelbergpass (2664, 1А) -- пос. Zermatt -- пер. P3824 (1Б, сн-лд.) -- вер. Breithorn (1Б, 4164, рад.) -- Bivacco Rossi e Volante (3700) -- р. Torrente Curtod -- пер. Сolletto di Nano (1А, 2650) -- пер. Col de Nannaz (1А, 2773) -- Camping Glair -- пос. Grand Moulin -- гор. St.Vincent
+- Пройдено перевалов и вершин: 9
+  - 1Б - 5 шт
+  - 1А - 4 шт
+- Максимальная высота: 4 164 м (вер. Breithorn)
+- Максимальная высота ночевки: 3824 (пер. P3824)
+
