@@ -3,7 +3,9 @@ title: "Отчёт о горном походе 2 к.с.\ Пеннинские �
 author: "Коровин Владимир"
 email: "<dimcoker@yandex.ru>"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: 
+  bookdown::gitbook:  
+    split_by: "section"
 documentclass: book
 link-citations: yes
 github-repo: vrkrv/alps19
