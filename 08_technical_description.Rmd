@@ -80,6 +80,109 @@ knitr::include_graphics("photo/technical/20190714_d01_2036__mg_5060.jpg")
 
 ### 15 июля
 
+Подъём в 6:00. Завтрак 7:30. Всю ночь шел снег с дождём, видимость упала до 150 м, ждём погоды. 
+В 10:30 дождь начал ослабевать, туман ушел, начинаем собирать лагерь. Выходим в 11:35, возвращаемся на тропу, начинаем подъём на отрог г. Pizzo Straciugo. 
+
+```{r, fig.cap = "Вид на вер. Pizza Straciugo (2713) с оз. Laghi di Campo"}
+knitr::include_graphics("photo/technical/20190715_d02_1114__mg_5094.jpg")
+```
+
+```{r, fig.cap = "Вид на вер. Clima d'Azoglio (2611) с оз. Laghi di Campo"}
+knitr::include_graphics("photo/technical/20190715_d02_1200__mg_5112.jpg")
+```
+
+```{r, fig.cap = "Вид на вер. Pizzo Montalto (2705) с оз. Laghi di Campo"}
+knitr::include_graphics("photo/technical/20190715_d02_1200__mg_5118.jpg")
+```
+
+```{r, fig.cap = "Тропа на отрог г. Pizzo Straciugo к пер. Passo di Pontimia"}
+knitr::include_graphics("photo/technical/20190715_d02_1200__mg_5117.jpg")
+```
+
+Набираем 100 м высоты по тропе и выходим на отрог (12:15). Отсюда хорошо видно седловину пер. Passo di Pontimia и вер. Pizzo Ricco.
+
+```{r, fig.cap = "Вер. Pizzo Straciugo с отрога"}
+knitr::include_graphics("photo/technical/20190715_d02_1215_img_7460.jpg")
+```
+
+```{r, fig.cap = "Пер. Passo di Pontimia с отрога"}
+knitr::include_graphics("photo/technical/20190715_d02_1212_img_7450.jpg")
+```
+
+```{r, fig.cap = "Оз. Passo di Pontimia и пер. Passo di Campo с отрога"}
+knitr::include_graphics("photo/technical/20190715_d02_1219__mg_5127.jpg")
+```
+
+
+Спускаемся вниз и продолжаем идти по тропе. Развилка на перевал обозначена надписью на камне. За два перехода от отрога поднимаемся по местами крутой тропе на перевал Passo di Pontimia (13:20). 
+
+Перевал Passo di Pontimia (1A, 2387) расположен на границе Италии и Швейцарии, между вершинами Pizzo Straciugo и Cima del Rosso (2624). С перевальной седловины просматривается в обе стороны дол. р. Grosses wasser, видно место наших сегодняшних ночевок возле одинокого домика, расположенного на ур. Galki и наш следующий перевал -- пер. Zwischbergenpass. Ниже перевала раскинулась широкая терраса и группа оз. Laghi Pontimia. 
+
+```{r, fig.cap = "Вид на отрог с пер. Passo di Pontimia"}
+knitr::include_graphics("photo/technical/20190715_d02_1316_img_7481_1.jpg")
+```
+
+```{r, fig.cap = "Вер. Ricca (2534) и вер. Pizzo Straciugo (2713) с пер. Passo di Pontimia"}
+knitr::include_graphics("photo/technical/20190715_d02_1320__mg_5159.jpg")
+```
+
+```{r, fig.cap = "Оз. Pontimia и пер. Zwischbergenpass с пер. Passo di Pontimia"}
+knitr::include_graphics("photo/technical/20190715_d02_1335_img_7499.jpg")
+```
+
+Возле озер замечаем стадо горных козлов. Спускаемся по тропе к озерам и располагаемся на обед (13:40). Погода постепенно налаживается, тучи развеиваются.
+
+```{r, fig.cap = "Пер. Passo di Pontimia от озёр Pontimia" }
+knitr::include_graphics("photo/technical/20190715_d02_1407__mg_5194.jpg")
+```
+
+В 16:30 выходим с места обеда, проходим по тропе через группу развалин возле озера и за один переход спускаемся к домику у развилки с указателями. Верхняя тропа ведет на пер. Passo d'Andolla (1А, 2418), нижняя -- спускается к р. Grosses Wassers. Мы уходим по нижней тропе.
+
+```{r, fig.cap = "Пер. Passo di Pontimia" }
+knitr::include_graphics("photo/technical/20190715_d02_1556_img_7545.jpg")
+```
+
+```{r, fig.cap = "Вид на пер. Zwischbergenpass от развилки на пер. Passo d'Andolla" }
+knitr::include_graphics("photo/technical/20190715_d02_1602_img_7546.jpg")
+```
+
+```{r, fig.cap = "Пер. Zwischbergenpass  от развилки на пер. Passo d'Andolla" }
+knitr::include_graphics("photo/technical/20190715_d02_1610__mg_5212.jpg")
+```
+
+```{r, fig.cap = "Домик у развилки" }
+knitr::include_graphics("photo/technical/20190715_d02_1610__mg_5216.jpg")
+```
+
+Переходим ручей и спускаемся по крутой хорошо натоптанной тропе вниз, к реке Grosses Wasser. Начинаем искать возможность перейти реку (17:00). Ниже по течению виднеется мост через р. Grosses Wasser, но до него нужно идти примерно полтора-два км по тропе. Река не очень широкая, распределяемся и ищем место для брода. В 200 м выше по течению от слияния притоков р. Grosses Wasser находим перекаты и переходим вброд по ним на другой берег. Несмотря на прошедший дождь, уровень воды в реке оказался невысоким, течение не очень сильное, уровень воды чуть выше щиколотки. По левому берегу вдоль реки проложена тропа  к кошу Gmeinalp и дальше, к пер. Zwischbergenpass.
+
+```{r, fig.cap = "Брод р. Grosses Wasser" }
+knitr::include_graphics("photo/technical/20190715_d02_1744_img_7619.jpg")
+```
+
+```{r, fig.cap = "Путь в верховья р. Grosses Wasser" }
+knitr::include_graphics("photo/technical/20190715_d02_1757_img_7630.jpg")
+```
+
+
+Проходим ур. Gmeinalp, оставляя справа в стороне дом пастуха, и начинаем подъём по хорошо маркированный тропе к ур. Galki на пути к пер. Zwischbergenpass.
+За 2 перехода выходим выше каньона на луга. Здесь тропа резко разворачивается в противоположную сторону и уводит наверх, на хребет, вдоль скал. 
+
+```{r, fig.cap = "Каньон р. Grosses Wasser и пер. Zwischbergenpass после ур. Gmeinalp" }
+knitr::include_graphics("photo/technical/20190715_d02_1841_img_7660.jpg")
+```
+
+```{r, fig.cap = "Поворот после каньона р. Grosses Wasser" }
+knitr::include_graphics("photo/technical/20190715_d02_1917_img_7665.jpg")
+```
+
+За один переход набираем ещё 150 м высоты и выходим к домику на урочище Galki. Дом и у туалет у дома закрыты на ключ, рядом с домом есть лохань, к которой подведён от ручья шланг с водой. Поднимаемся примерно на 20 выше домика по тропе и на высоте 2180 м находим ровные площадки, на которых встаем лагерем (19:40). Вода находится в 50 м правее площадок, или можно спуститься назад на 20 м вниз, к хижине. Рядом с лагерем пасётся стадо баранов. Примерно в 21:00  из-за противоположного склона выходит луна. Небо ясное, погода улучшилась.
+
+```{r, fig.cap = "Вид на вер. Pizza Straciugo и пер. Passo di Pontimia с ур. Galki" }
+knitr::include_graphics("photo/technical/20190715_d02_2013_img_7699.jpg")
+```
+
+
 ## Перевал Zwischbergenpass (1Б, 3287)
 
 ### 16 июля
