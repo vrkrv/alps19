@@ -488,7 +488,7 @@ knitr::include_graphics("photo/technical/20190718_d05_1706__mg_5732.jpg")
 ```
 
 ```{r, fig.cap = "Зимняя хиж. Mischabelhuette" }
-knitr::include_graphics("../photo/technical/20190719_d06_0743__mg_5759.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0743__mg_5759.jpg")
 ```
 
 ### 19 июля
@@ -496,129 +496,129 @@ knitr::include_graphics("../photo/technical/20190719_d06_0743__mg_5759.jpg")
 Встаём в 5:00, выходим в 7:40. Ясно, солнечно. Перед выходом из хижины собираемся оставить мусор, хозяйка говорит, что они мусор не принимают, т.к. мусор вывозится вертолётом,  но потом передумывает и забирает. Награждаем её за услугу шоколадкой Алёнкой, девушка удивилась и обрадовалась. 
 
 ```{r, fig.cap = "Выход на гребень от хиж. Mischabelhuette" }
-knitr::include_graphics("../photo/technical/20190719_d06_0741__mg_5751.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0741__mg_5751.jpg")
 ```
 
 ```{r, fig.cap = "Предупреждающая табличка перед выходом на гребень" }
-knitr::include_graphics("../photo/technical/20190719_d06_0743__mg_5775.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0743__mg_5775.jpg")
 ```
 
 
 ```{r, fig.cap = "Вид на вер. Alphubel (4206) и вер. Allalinhorn (4027) из хиж. Mischabelhuette" }
-knitr::include_graphics("../photo/technical/20190719_d06_0741__mg_5756.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0741__mg_5756.jpg")
 ```
 
 ```{r, fig.cap = "Путь по гребню к лед. Hohbalmgletcher от хиж. Mischabelhuette" }
-knitr::include_graphics("../photo/technical/20190719_d06_0749_img_8340.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0749_img_8340.jpg")
 ```
 
 Выбираемся на скальный гребень и продолжаем идти по тропе на лед. Hohbalmgletcher. После хижины скальный гребень становиться существенно более широким, лазанье здесь эпизодическое. В 50 м выше хижины находим первые на этом гребне площадки под палатки. Поставить здесь можно всего одну-две палатки, однако воды здесь нет и за ней все равно нужно ходить либо в хижину, либо к леднику. На 3400 поднимаемся по очередной лестнице на тропе.
 
 ```{r, fig.cap = "Отдельные площадки в 50 м выше хиж. Mischabelhuette" }
-knitr::include_graphics("../photo/technical/20190719_d06_0755__mg_5781.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0755__mg_5781.jpg")
 ```
 
 ```{r, fig.cap = "Скальный пик Schwarzhorn (3620)" }
-knitr::include_graphics("../photo/technical/20190719_d06_0803__mg_5785.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0803__mg_5785.jpg")
 ```
 
 ```{r, fig.cap = "Вид на хиж. Mischabelhuette с выс. 3480" }
-knitr::include_graphics("../photo/technical/20190719_d06_0831__mg_5810.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0831__mg_5810.jpg")
 ```
 
 В 9:00 поднимаемся к переходу с гребня на ледник Hohbalmgletcher (3580). Ледник закрытый, на леднике отчётливо видна тропа на пер. Windjoch, большинство альпинистских связок рано утром отправилось на восхождение, мы начинаем встречать первые связки, возвращающиеся назад. 
 
 ```{r, fig.cap = "Выход с гребня на лед. Hohbalmgletcher, пер. Windjoch и вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_0912__mg_5812.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0912__mg_5812.jpg")
 ```
 
 ```{r, fig.cap = "Движение в связках по леднику Hohbalmgletcher"}
-knitr::include_graphics("../photo/technical/20190719_d06_0936__mg_5817.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0936__mg_5817.jpg")
 ```
 
 ```{r, fig.cap = "Вид с лед. Hohbalmgletcher в обратном направлении"}
-knitr::include_graphics("../photo/technical/20190719_d06_0951_img_8394.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_0951_img_8394.jpg")
 ```
 
 
 За один переход пересекаем ледовое плато. Поднимаемся вверх на ледник по тропе крутизной 15-30 градусов, траверсируя вначале вправо, затем налево, обходя таким образом разлома ледника по центру. Над разломом крутизна склона уменьшается до 10-20 градусов, поднимаемся чуть выше перевальной седловины на развилку к вер. Nadelhorn и сворачиваем направо, на наш пер. Windjoch (11:25).  
 
 ```{r, fig.cap = "Вид на пер. Windjoch выше ледового разлома"}
-knitr::include_graphics("../photo/technical/20190719_d06_1038_img_8417.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1038_img_8417.jpg")
 ```
 
 
 Пер. Windjoch (1Б, 3850) разделяет лед. Hohbalmgletcher и лед. Riedgletcher, является популярной промежуточной точкой для совершения восхождений на вер. Ulrichshorn и вер. Nadelhorn. Спуск в дол. р. Riedbach совершают через траверс вер. Ulrichshorn, прямому выходу на лед. Riedgletcher мешает широкий бергшрунд ниже седловины. Название Windjoch перевал получил за сильный ветер, который здесь поднимается, о чём упоминалось в нескольких описаниях. Когда мы были на перевале ветер был спокойный, но следует учитывать такую возможность.
 
 ```{r, fig.cap = "Седловина пер. Windjoch и вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_1110_img_8429.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1110_img_8429.jpg")
 ```
 
 ```{r, fig.cap = "Седловина пер. Windjoch и вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_1116_img_8436.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1116_img_8436.jpg")
 ```
 
 ```{r, fig.cap = "Группа на пер. Windjoch"}
-knitr::include_graphics("../photo/technical/20190719_d06_1130_img_8463.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1130_img_8463.jpg")
 ```
 
 
 С седловины перевала за один переход  поднимаемся на вершину Ulrichshorn (1Б, 3847) (12:00). Подъём на вершину довольно простой, через неё проходит единственный маршрут в долину р. Riedbach. Под самой вершиной со стороны дол. Saastal прикручена небольшая скамеечка -- альпинисты шутят. Делаем групповую фотографию и начинаем спускаться вниз. 
 
 ```{r, fig.cap = "Вид на пер. Windjoch и вер. Nadelhorn с вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_1202__mg_5849.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1202__mg_5849.jpg")
 ```
 
 ```{r, fig.cap = "Вид на пер. Windjoch и вер. Nadelhorn (4327) и вер. Lenspitze (4294) с вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_1202_img_8479.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1202_img_8479.jpg")
 ```
 
 ```{r, fig.cap = "Вид на пер. Riedpass и вер. Gemshorn (3604) с вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_1206__mg_5876.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1206__mg_5876.jpg")
 ```
 
 
 ```{r, fig.cap = "Вид на вер. Gross Balfrin (3626), вер. Bietshorn (3934) с вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_1202__mg_5856.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1202__mg_5856.jpg")
 ```
 
 ```{r, fig.cap = "Cпуск на лед. Riedgletcher с вер. Ulrichshorn"}
-knitr::include_graphics("../photo/technical/20190719_d06_1231_img_8500.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1231_img_8500.jpg")
 ```
 
 Обходим трещины по центру которых мы, правда, не увидели, но они обозначены на картах. Выходим на лед. Riedgletcher (13:30, 3570). Ледник закрытый, довольно пологий. Пересекаем ледник по следам альпинистов. Через один переход на высоте 3500 начинают попадаться трещины. Мы сначала пробуем обойти трещина справа, но ближе к скалам трещин становится больше, поэтому возвращаемся обратно на тропу, по всей видимости она делает длинный заход в обход основных трещин.
 
 ```{r, fig.cap = "Вер. Nadelhorn с лед. Riedglecher"}
-knitr::include_graphics("../photo/technical/20190719_d06_1326__mg_5890.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1326__mg_5890.jpg")
 ```
 
 ```{r, fig.cap = "Вер. Ulrichshorn и пер. Windjoch с лед. Riedglecher"}
-knitr::include_graphics("../photo/technical/20190719_d06_1328_img_8503.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1328_img_8503.jpg")
 ```
 
 Постепенно тропа начинает уходить вправо к скальным прижимам. У скальных прижимов есть непротяжённый участок открытого льда, по которому можно достаточно просто спуститься вниз  в обход ледопада (14:00, 3400).
 
 ```{r, fig.cap = "Спуск с ледопада Riedglecher под скалами вер. P3528"}
-knitr::include_graphics("../photo/technical/20190719_d06_1409_img_8539.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1409_img_8539.jpg")
 ```
 
 ```{r, fig.cap = "Спуск с ледопада Riedglecher под скалами вер. P3528"}
-knitr::include_graphics("../photo/technical/20190719_d06_1411__mg_5894.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1411__mg_5894.jpg")
 ```
 
 ```{r, fig.cap = "Спуск с ледопада Riedglecher под скалами вер. P3528"}
-knitr::include_graphics("../photo/technical/20190719_d06_1424__mg_5897.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1424__mg_5897.jpg")
 ```
 
 ```{r, fig.cap = "Спуск с ледопада Riedglecher под скалами вер. P3528"}
-knitr::include_graphics("../photo/technical/20190719_d06_1448__mg_5899.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1448__mg_5899.jpg")
 ```
 
 
 Спускаемся на 50 м  вниз и выходим на ровный открытый  ледник. За один переход выходим к скалам под пер. Balfrinjoch. Здесь снимаем кошки и разбираем связки, располагаемся на обед у ручья (15:00,  3150 м). Небо потихоньку начинает затягивать облаками.
 
 ```{r, fig.cap = "Переход с лед. Riedgletcher на скалы под пер. Balfrinjoch"}
-knitr::include_graphics("../photo/technical/20190719_d06_1449__mg_5900.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1449__mg_5900.jpg")
 ```
 
 После обеда продолжаем спускаться к хиж. Bordierhütte. По пути примечаем возможные места под палатки. Тропа маркирована турами, по пути проходим водокачку и водопровод, ведущий от ледника к хижине. На высоте 2980 находим более-менее ровные площадки. Оставляем здесь рюкзаки и посылаем двоих участников с рациями проверить, можно ли встать возле хижины. Примерно через 50 минут ребята вернулись и рассказли результаты переговоров с хозяйкой хижины. Хозяйка говорит, что палатки ставить возле хижины нельзя, их можно поставить только там, где она не будет видеть, т.к. официально ставить палатки возле хижины запрещено. Площадки же под палатки есть только непосредственно у самой хижины. 
@@ -627,19 +627,19 @@ knitr::include_graphics("../photo/technical/20190719_d06_1449__mg_5900.jpg")
 
 
 ```{r, fig.cap = "Спуск вдоль хребта Balfrin к хижине Bordierhuette"}
-knitr::include_graphics("../photo/technical/20190719_d06_1658_img_8550.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1658_img_8550.jpg")
 ```
 
 ```{r, fig.cap = "Пер. Galenjoch с мест стоянок"}
-knitr::include_graphics("../photo/technical/20190719_d06_1712__mg_5910.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1712__mg_5910.jpg")
 ```
 
 ```{r, fig.cap = "Пер. Balfrinjoch и вер. Balfrin Nordwestgipfel с мест стоянок"}
-knitr::include_graphics("../photo/technical/20190719_d06_1843__mg_5919.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1843__mg_5919.jpg")
 ```
 
 ```{r, fig.cap = "Хиж. Bordierhuette и пер. Mittelbergpass  с мест стоянок"}
-knitr::include_graphics("../photo/technical/20190719_d06_1854__mg_5926.jpg")
+knitr::include_graphics("photo/technical/20190719_d06_1854__mg_5926.jpg")
 ```
 
 
