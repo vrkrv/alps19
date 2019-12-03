@@ -12,6 +12,11 @@ github-repo: vrkrv/alps19
 description: "Отчёт о горном походе"
 ---
 
+```{r  global_options, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE,
+warning = FALSE)
+```
+
 # Справочные сведения
 
 - Вид туризма: Горный
@@ -31,6 +36,32 @@ description: "Отчёт о горном походе"
 
 ## Список участников
 
-- Коровин В.Ю.
-- Участник 2
+```{r}
+member_list <- readr::read_tsv("data/member_list.tsv")
+knitr::kable(member_list)
+```
+
+
+## Запланированный и пройденный маршрут
+
+TBA
+
+## Схема маршрута
+
+TBA
+
+## Высотный график
+
+TBA
+
+## География района
+
+TBA
+
+## Логистика
+
+TBA
+
+
+
 
