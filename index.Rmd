@@ -37,6 +37,10 @@ warning = FALSE)
 ## Список участников
 
 ```{r}
+library(dplyr)
+library(knitr)
+library(kableExtra)
+options(knitr.kable.NA = '')
 member_list <- readr::read_tsv("data/member_list.tsv")
 knitr::kable(member_list)
 ```
@@ -45,19 +49,31 @@ knitr::kable(member_list)
 ## Запланированный и пройденный маршрут
 
 ```{r}
-library(dplyr)
-library(knitr)
-library(kableExtra)
-options(knitr.kable.NA = '')
 plan_df <- readxl::read_xlsx("data/plan.xlsx")
 kable(plan_df) %>%
   kable_styling(bootstrap_options = "striped", full_width = F)
 ```
 
+Отклонения от маршрута:
+
+1. День 8. Из-за того, что тропа Europaweg к хиж. Europahutte была перекрыта, вынуждены были пройти по нижней тропе, сделав крюк в 2,5 км. В результате мы не успевали в кемпинг Tasch и остановились в кемпинге рядом с ним -- кемпинг Rand.
+2. День 12а. Вместо прямого спуска в дер. Nuarsazz был выбран альтернативный маршрут через пер. Col de Fontaines. Оба варианта равноцены по сложности прохождения, посчитали, что интереснее будет пройти через более-менее пустынную местность, чем спускаться через горнолыжный курорт. Также мы совершили на 12 день радиальное восхождение с перевала Col de Nannaz на обзорную вер. Becca Trecare (н/к, 3032), к которой вела тропа с перевала.
+3. День 13b. Вместо пешего путешествия по автомобильной дороге к гор. Chatillon прошли только часть маршрута, которая проходила по тропе вдоль дороги до дер. Grand Moullin. От дер. Grand Moullin доехали до гор. Chatillon на автобусе, т.к. тропы после этого места нет, и пришлось бы идти по обочине дороги.
 
 ## Схема маршрута
 
-TBA
+```{r, fig.cap = "Карта района"}
+knitr::include_graphics("photo/maps/map_general.png")
+```
+
+```{r, fig.cap = "Первое кольцо"}
+knitr::include_graphics("photo/maps/map_k1.jpg")
+```
+
+```{r, fig.cap = "Второе кольцо"}
+knitr::include_graphics("photo/maps/map_k2.jpg")
+```
+
 
 ## Высотный график
 

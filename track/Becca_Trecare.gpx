@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="http://nakarte.me" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+	<trk>
+		<name>Becca_Trecare</name>
+		<trkseg>
+			<trkpt lat="45.854490" lon="7.680045"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.854640" lon="7.679143"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.855370" lon="7.678757"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.856872" lon="7.678972"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.858031" lon="7.678929"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.858674" lon="7.678328"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.858074" lon="7.676354"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+		</trkseg>
+	</trk>
+</gpx>

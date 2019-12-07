@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="http://nakarte.me" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+	<trk>
+		<name>Weisshorn loop</name>
+		<trkseg>
+			<trkpt lat="45.932167" lon="7.740598"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.933669" lon="7.742894"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.935321" lon="7.745126"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.936931" lon="7.746499"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.938561" lon="7.748044"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.939720" lon="7.746885"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.940686" lon="7.746327"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.941115" lon="7.746327"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.941222" lon="7.746928"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.941050" lon="7.747787"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.940235" lon="7.749374"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.939935" lon="7.750683"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.939463" lon="7.750640"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.938626" lon="7.750276"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.938175" lon="7.749782"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.936373" lon="7.748237"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.934806" lon="7.746456"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.932896" lon="7.743903"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+			<trkpt lat="45.932060" lon="7.740727"><time>1970-01-01T00:00:01.000Z</time></trkpt>
+		</trkseg>
+	</trk>
+</gpx>
