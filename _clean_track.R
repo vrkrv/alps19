@@ -1,0 +1,106 @@
+pacman::p_load(tidyverse, readxl, sp, rgdal, lubridate)
+library(ggrepel)
+
+wp <- readOGR("track/Alps2019_MGU_clean.gpx", layer = "track_points")
+track_df <-
+  wp %>%
+  as.data.frame %>%
+  as.tbl %>%
+  mutate_at("time", ymd_hms) %>%
+  mutate_at("time", `+`, 7800) %>%
+  select(track_seg_point_id, time, ele, coords.x1, coords.x2) %>%
+  mutate(day = as.integer(as_date(time) - ymd("20190713"))) %>%
+  mutate(dist = c(0, spDists(wp, segments = T))) %>%
+  # add speed km/h
+  group_by(day) %>%
+  mutate(speed = 3.6e3 * dist / as.integer(difftime(time, lag(time)))) %>%
+  ungroup
+
+tab_df <-
+  track_df %>%
+  group_by(day) %>%
+  summarise(distance = sum(dist),
+            ghv = difftime(last(time), first(time)),
+            h_night = last(ele),
+            h_max = max(ele)) #%>%
+  # mutate_at("ghv", list(~stringr::str_sub(hms::as_hms(.), end = -4L)))
+
+# stop time:
+track_df %>%
+  filter(day == 4) %>%
+  mutate(is.stop = speed < (mean(speed, na.rm = T) / 4)) %>%
+  ggplot(aes(cumsum(dist), time)) +
+  geom_line() +
+  geom_point(aes(color = is.stop))
+
+stop_df <-
+  track_df %>%
+  group_by(day) %>%
+  mutate(chv = difftime(time, lag(time))) %>%
+  mutate(is.stop = speed < (mean(speed, na.rm = T) / 4)) %>%
+  # add stop point before:
+  # mutate_at("is.stop", list(~ifelse(lead(.) & !., TRUE, .))) %>%
+  filter(is.stop) %>%
+  summarise_at("chv", sum) #%>%
+  # mutate_at("chv", list(~stringr::str_sub(hms::as_hms(.), end = -4L)))
+
+tab_df %>%
+  left_join(stop_df) %>%
+  mutate(chistoe = ghv - chv) %>%
+  mutate_at(vars(ghv, chv, chistoe), list(~stringr::str_sub(hms::as_hms(.), end = -4L)))
+
+
+
+# Clean original track ----------------------------------------------------
+
+#' Remove rand - Zermatt
+#' Remove Trockener Steg
+#' Add breithorn summit
+#' Add Becca trecaria
+#' Add Grand moulin track
+k1_df <- track_df %>% filter(day < 9)
+k2_df <- track_df %>% filter(day >= 9)
+
+k1_df %>%
+  filter(day == 1) %>%
+  mutate_at("dist", cumsum) %>%
+  # head(40) %>%
+  # tail(40) %>%
+  ggplot(aes(dist, ele, color = speed > 7)) +
+  # geom_text_repel(aes(label = track_seg_point_id)) +
+  geom_line(size = 3)
+
+# 231-232 -- passo Gr...
+# 249-250 -- passo di Campo
+# 287 -- mini pass before passo di Pontimia
+# 314 -- passo di Pontimia
+# 609 -- Zwischbergenpass
+# 952 -- Mischabelhutte
+# 1050 -- Windjoch
+# 1069 -- Ulrichshorn
+# 1219 -- Mittelbergpass
+# 1390 -- unexpected rundgagn on Unter Europaweg
+
+
+
+
+# Add missing cuts from files ---------------------------------------------
+
+
+bh_wp <- readOGR("track/Weisshorn loop.gpx", layer = "track_points")
+
+track_bh <-
+  bh_wp %>%
+  as.data.frame %>%
+  as.tbl %>%
+  select(x = coords.x1, y = coords.x2) %>%
+  as.data.frame %>%
+  elevatr::get_elev_point("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs", "aws", z = 14)  %>%
+  as.data.frame() %>%
+  as.tbl
+
+bh_wp$ele <- track_bh$elevation
+
+# FIXME! add time points (uniformly)
+bh_dist = sum(spDists(bh_wp, segments =  TRUE))
+
