@@ -26,28 +26,69 @@ tab_df <-
   # mutate_at("ghv", list(~stringr::str_sub(hms::as_hms(.), end = -4L)))
 
 # stop time:
-track_df %>%
-  filter(day == 4) %>%
-  mutate(is.stop = speed < (mean(speed, na.rm = T) / 4)) %>%
+track_df2 %>%
+  filter(day == 2) %>%
+  # mutate(is.stop = speed < (mean(speed, na.rm = T) / 4)) %>%
+  group_by(day) %>%
+  mutate(is.stop = case_when(speed < (mean(speed, na.rm = T) / 4) ~ "stop",
+                             speed > (mean(speed, na.rm = T) * 4) ~ "ride",
+                             T ~ "walk")) %>%
   ggplot(aes(cumsum(dist), time)) +
   geom_line() +
-  geom_point(aes(color = is.stop))
+  geom_point(aes(color = is.stop)) + facet_wrap(~day, scales = 'free')
+
+plotly::ggplotly()
+
+track_df %>%
+  filter(day == 5) %>%
+  # mutate(is.stop = speed < (mean(speed, na.rm = T) / 4)) %>%
+  group_by(day) %>%
+  mutate(is.stop = case_when(speed < (median(speed, na.rm = T) / 4) ~ "stop",
+                             speed > (median(speed, na.rm = T) * 4) ~ "ride",
+                             T ~ "walk")) %>%
+  ggplot(aes(cumsum(dist), time)) +
+  geom_line() +
+  geom_point(aes(color = is.stop)) + facet_wrap(~day, scales = 'free')
+  # plotly::ggplotly()
+
+track_df2 <-
+  track_df %>%
+  slice(-c(1:2)) %>% # FIXME! First day problem
+  # mutate(is.stop = speed < (mean(speed, na.rm = T) / 4)) %>%
+  group_by(day) %>%
+  mutate(is.stop = case_when(speed < (median(speed, na.rm = T) / 4) ~ "stop",
+                             speed > (median(speed, na.rm = T) * 4) ~ "ride",
+                             T ~ "walk")) %>%
+  # fix first point -- is it was just switch on, without walking:
+  mutate_at("is.stop", list(~ifelse(is.na(speed) & (lag(.) == "stop"), "stop", .))) %>%
+  filter(is.stop != "stop") %>%
+  # recalc speed again:
+  mutate(speed = 3.6e3 * dist / as.integer(difftime(time, lag(time))))
+
+
 
 stop_df <-
-  track_df %>%
+  track_df2 %>%
   group_by(day) %>%
   mutate(chv = difftime(time, lag(time))) %>%
-  mutate(is.stop = speed < (mean(speed, na.rm = T) / 4)) %>%
+  mutate(is.stop = case_when(
+    speed < ((speed - mean(speed, na.rm = T)) / sd(speed, na.rm = T)) ~ "stop",
+    # speed > 10 ~ "ride",
+    T ~ "walk")) %>%
   # add stop point before:
   # mutate_at("is.stop", list(~ifelse(lead(.) & !., TRUE, .))) %>%
-  filter(is.stop) %>%
-  summarise_at("chv", sum) #%>%
+  # filter(is.stop == "stop") %>%
+  group_by(day, is.stop) %>%
+  summarise_at("chv", sum, na.rm = T) %>%
+  spread(is.stop, chv) %>%
+  mutate(ghv = stop + walk)
   # mutate_at("chv", list(~stringr::str_sub(hms::as_hms(.), end = -4L)))
 
-tab_df %>%
-  left_join(stop_df) %>%
-  mutate(chistoe = ghv - chv) %>%
-  mutate_at(vars(ghv, chv, chistoe), list(~stringr::str_sub(hms::as_hms(.), end = -4L)))
+# tab_df %>%
+  # mutate(chistoe = ghv - chv) %>%
+  # mutate_at(vars(ghv, chv, chistoe), list(~stringr::str_sub(hms::as.hms(.), end = -4L)))
+stop_df %>%
+  mutate_at(vars(ghv, stop, walk), list(~stringr::str_sub(hms::as.hms(.), end = -4L)))
 
 
 
