@@ -4,9 +4,9 @@
 	background: #f5f5f5;
 	position:relative;
   }
-  
+
 .mountainpass:before {
-	content: "\f21c";
+	content: "\f279";
 	font-family: FontAwesome;
 	left:10px;
 	position:absolute;

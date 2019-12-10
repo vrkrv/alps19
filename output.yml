@@ -1,2 +1,0 @@
-bookdown::html_book:
-  css: [style.css, font-awesome.min.css]

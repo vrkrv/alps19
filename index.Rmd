@@ -6,6 +6,7 @@ site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:  
     split_by: "section"
+    css: [css/style.css, css/fontawesome.min.css]
 documentclass: book
 link-citations: yes
 github-repo: vrkrv/alps19
