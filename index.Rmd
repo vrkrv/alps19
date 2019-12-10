@@ -74,20 +74,17 @@ knitr::include_graphics("photo/maps/map_k1.jpg")
 knitr::include_graphics("photo/maps/map_k2.jpg")
 ```
 
-
-## Высотный график
+## Карта маршрута
 
 ```{r}
 library(sp)
-library(plotly)
+library(leaflet)
+
+# read track and create annotations:
 wp <- readr::read_rds("data/track_extended.Rds")
 track_df <- wp %>% as.data.frame %>% as.tbl
 
-k1_df <- track_df %>% filter(day < 9) %>% mutate_at('dist', `*`, 1.2)
-k2_df <- track_df %>% filter(day >= 9) %>% mutate_at('dist', `*`, 1.2)
-
-# add annotations:
-adf1 <- 
+adf <- 
   tribble(
     ~track_seg_point_id, ~text,
     0, "camp. Yolki-Palki",
@@ -96,14 +93,63 @@ adf1 <-
     236, "passo di Pontimia",
     429, "Zwischbergenpass",
     542, "camp. Kappelenweg",
-    687, "Mischabelhutte",
+    687, "хиж. Mischabelhutte",
     756, "Windjoch",
     770, "Ulrichshorn",
     879, "P2664",
     971, "обход Europaweg",
-    1007, "camp. Rand"
+    1007, "camp. Rand",
+    1008, "Zermatt",
+    1027, "ст. Trockener Steg",
+    1170, "P3824",
+    1158, "Breithorn",
+    1255, "оз. 2740",
+    1382, "col di Nannaz",
+    1398, "Becca Trecare",
+    1408, "col di Fontaines",
+    1462, "camp. Glair",
+    1559, "дер. Grand Moulin"
   ) %>%
-  inner_join(k1_df %>% select(track_seg_point_id, day, dist, ele) %>% mutate_at("dist", cumsum)) 
+  inner_join(track_df %>% select(track_seg_point_id, coords.x1, coords.x2, ele, time))
+
+m <-
+  leaflet() %>%
+  addProviderTiles("OpenTopoMap", group = "OpenTopoMap") %>%
+  addLegend(position = 'bottomright',
+            opacity = 0.4,
+            colors = 'blue',
+            labels = 'Пройденный маршрут',
+            title = 'Поход 2 к.с. Пеннинские Альпы')
+
+m %>%
+  addPolylines(data = Line(wp[wp$day < 9, ]),
+               color = 'blue',
+               group = 'k1')  %>%
+  addPolylines(data = Line(wp[wp$day >= 9, ]),
+               color = 'green',
+               group = 'k2') %>%
+  addMarkers(
+    data = adf %>%
+      mutate(lab = sprintf("<b>%s<b/><br/>N %s, E %s<br/>elevation: %s<br/>%s",
+                           text, round(coords.x2, 4), round(coords.x1, 4), ele, time)),
+    lng  = ~coords.x1,
+    lat  = ~coords.x2,
+    label = ~lapply(lab, htmltools::HTML),
+    group = "annotation")
+```
+
+## Высотный график
+
+```{r}
+library(plotly)
+
+k1_df <- track_df %>% filter(day < 9) %>% mutate_at('dist', `*`, 1.2)
+k2_df <- track_df %>% filter(day >= 9) %>% mutate_at('dist', `*`, 1.2)
+
+# add annotations:
+adf1 <- 
+  adf %>%
+  inner_join(k1_df %>% select(track_seg_point_id, day, dist, ele, coords.x1, coords.x2) %>% mutate_at("dist", cumsum)) 
 
 p1 <- 
   k1_df %>%
@@ -126,18 +172,7 @@ plotly::ggplotly(p1) %>%
 
 # second ring:
 adf2 <- 
-  tribble(
-    ~track_seg_point_id, ~text,
-    1008, "Zermatt",
-    1027, "Trockener Steg",
-    1170, "P3824",
-    1158, "Breithorn",
-    1255, "оз. 2740",
-    1382, "col di Nannaz",
-    1398, "Becca Trecare",
-    1408, "col di Fontaines",
-    1559, "camp. Glair") %>%
-  inner_join(k2_df %>% select(track_seg_point_id, day, dist, ele) %>% mutate_at("dist", cumsum)) 
+  adf %>% inner_join(k2_df %>% select(track_seg_point_id, day, dist, ele) %>% mutate_at("dist", cumsum)) 
 
 p2 <- 
   k2_df %>%
