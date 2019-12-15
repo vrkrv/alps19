@@ -41,6 +41,8 @@ warning = FALSE)
 library(dplyr)
 library(knitr)
 library(kableExtra)
+library(lubridate)
+
 options(knitr.kable.NA = '')
 member_list <- readr::read_tsv("data/member_list.tsv")
 knitr::kable(member_list)
@@ -83,7 +85,12 @@ library(leaflet)
 
 # read track and create annotations:
 wp <- readr::read_rds("data/track_extended.Rds")
-track_df <- wp %>% as.data.frame %>% as.tbl
+track_df <- 
+  wp %>% 
+  as.data.frame %>%
+  as.tbl %>%
+  mutate_at("time", ymd_hms) %>%
+  mutate_at("time", `+`, 7800)
 
 adf <- 
   tribble(

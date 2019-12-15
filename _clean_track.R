@@ -251,36 +251,35 @@ m %>%
 
 # Mini-track --------------------------------------------------------------
 
-  photo_df2 <- read_tsv("photo_tech_info2.tsv")
-  gpx_file <- "../track/Alps2019_MGU_clean.gpx"
-  wp <- readOGR(gpx_file, layer = "track_points")
-  track_df <- wp %>% as.data.frame %>% as.tbl %>% mutate_at("time", ymd_hms)
+photo_df2 <- read_tsv("photo_tech_info2.tsv")
+gpx_file <- "../track/Alps2019_MGU_clean.gpx"
+wp <- readOGR(gpx_file, layer = "track_points")
+track_df <- wp %>% as.data.frame %>% as.tbl %>% mutate_at("time", ymd_hms)
 
-
-  day_n <- ymd('2019-07-25')
+# day_n <- ymd('2019-07-25')
+create_map <- function(day_n) {
 
   photo_day1 <-
     photo_df2 %>%
     filter(CreateDate > day_n,
            CreateDate < day_n + 1)
+
   track_day1 <-
     track_df %>%
     filter(time > day_n,
            time < day_n + 1) %>%
     mutate_at("time", `+`, 7800)
+
   sp_track <-  sp::Lines(list(sp::Line(track_day1 %>% select(coords.x1, coords.x2) %>% as.matrix)), "day1")
 
-  # wp_tracks <- readOGR(gpx_file, layer = 'tracks')
-  # yadisk <- "https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/ZibKr3f-ZVSunQ/%s"
   m <-
     leaflet() %>%
     addProviderTiles("OpenTopoMap", group = "OpenTopoMap") %>%
     addLegend(position = 'bottomright',
               opacity = 0.4,
               colors = 'blue',
-              labels = 'Пройденный маршрут',
-              title = 'Поход 2 к.с. Пеннинские Альпы')
-  m %>%
+              # labels = sprintf('День %ы',
+              title = 'Поход 2 к.с. Пеннинские Альпы') %>%
     addPolylines(
       data = sp_track,
       color = 'blue',
@@ -292,11 +291,12 @@ m %>%
       # data = photo_day1,
       lng  = ~coords.x1,
       lat  = ~coords.x2,
-      # label = ~sprintf("%s<br/>N %s, E %s; elevation: %s", time, coords.x1, coords.x2, ele)),
       label = ~lapply(lab, htmltools::HTML),
       group = "day1") %>%
-    # addPopupImages(sprintf("../photo_day1$SourceFile, group = "day1", width = 480)
-    addPopupImages(sprintf("../photo/preview/%s", photo_day1$FileName), group = "day1", width = 480)
+    addPopupImages(sprintf("photo/preview/%s", photo_day1$FileName), group = "day1", width = 480)
+}
+
+
   # addPopupImages(sprintf("https://yadi.sk/d/ZibKr3f-ZVSunQ/%s", photo_day1$FileName), group = "day1", width = 640, height = 480)
   # addPopupImages(sprintf(yadisk, photo_day1$FileName), group = "day1", width = 640, height = 480)
   # addPopupImages(photo_day1 %>% transmute(FileName, tmp = glue::glue(yadisk)) %>% pull(tmp), group = "day1", width = 640, height = 480)
