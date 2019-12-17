@@ -108,7 +108,7 @@ adf <-
     971, "обход Europaweg",
     1007, "camp. Rand",
     1008, "Zermatt",
-    1027, "ст. Trockener Steg",
+    1035, "ст. Trockener Steg",
     1170, "P3824",
     1158, "Breithorn",
     1255, "оз. 2740",
@@ -175,6 +175,7 @@ plotly::ggplotly(p1) %>%
             text = adf1$text, 
             xref = "x",
             yref = "y",
+            textangle = -60,
             showarrow = TRUE,
             arrowhead = 7)
 
@@ -199,6 +200,7 @@ plotly::ggplotly(p2) %>%
             xref = "x",
             yref = "y",
             showarrow = TRUE,
+            textangle = -60,
             arrowhead = 7) 
 
 
