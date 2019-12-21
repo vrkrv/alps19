@@ -20,6 +20,7 @@ warning = FALSE)
 
 # Справочные сведения
 
+- Горный Турклуб МГУ
 - Вид туризма: Горный
 - Район: Западные Альпы / Пеннинские Альпы
 - Категория сложности: вторая
@@ -30,8 +31,8 @@ warning = FALSE)
 - Набор высоты: 11 км
 - Нитка маршрута: ст. Yolki-Palki (Bognanco) -- пер. Passo di Campo (н/к, 2180) -- пер. Passo di Pontimia (1А, 2387) -- пер. Zwischenbergen (1Б, 3287) -- пос. Saas-Almagel -- пер. Windjoch (1Б, 3850, сн-ск) -- вер. Ulrichshorn (1Б, 3925) -- хиж. Bordierhutte -- пер. P2664 (2664, н/к) -- пос. Zermatt -- пер. P3824 (1Б, сн-лд.) -- вер. Breithorn (1Б, 4164, рад.) -- Bivacco Rossi e Volante (3700) -- р. Torrente Curtod -- пер. Сolletto di Nano (1А, 2650) -- пер. Col de Nannaz (1А, 2773) -- Camping Glair -- пос. Grand Moulin -- гор. St.Vincent
 - Пройдено перевалов и вершин: 9
-  - 1Б - 5 шт
-  - 1А - 3 шт
+  - 1Б - 4 шт
+  - 1А - 2 шт
 - Максимальная высота: 4 164 м (вер. Breithorn)
 - Максимальная высота ночевки: 3824 (пер. P3824)
 
