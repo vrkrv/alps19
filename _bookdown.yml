@@ -2,5 +2,8 @@ book_filename: "alps19-report"
 language:
   ui:
     chapter_name: ""
+  label:
+    fig: "Фото "
+    tab: "Таблица "
 delete_merged_file: true
 output_dir: "docs"
